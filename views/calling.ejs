@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%-include('./inc/head')%>
+<body>
+    <H1>QUERY PAGE</H1>
+    <%-include('./inc/navbar')%>
+   <h4></h4>
+   <span>-------------------------------------------------</span><br>
+   <span><strong>GET ALL USERS</strong> </h4>
+   <form action="http://localhost:8000/allUsers" method="GET">
+    <input type="submit" value="Submit">
+  </form>
+  <span>-------------------------------------------------</span><br>
+  <span><strong>GET ID</strong> </span>
+      <form action="http://localhost:8000/getId" method="GET">
+        <label for="id"><strong>id:</strong></label>
+        <input type="text" id="id" name="id" value="" required ><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <span>-------------------------------------------------</span><br>
+      <span><strong>GET NAME</strong> </span>
+      <form action="http://localhost:8000/getFname" method="GET"> 
+        <label for="fname"><strong>First name:</strong></label>
+        <input type="text" id="fname" name="fname" value="" required><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <span>-------------------------------------------------</span><br>
+      <span><strong>GET LASTNAME </strong></span>
+      <form action="http://localhost:8000/getLname" method="GET"> 
+        <label for="lname"><strong>Last name:</strong></label>
+        <input type="text" id="lname" name="lname" value="" required><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%-include('./inc/head')%>
+</head>
+<body>
+   <h3>LOGİN SAYFASI</h3>
+   <h3>----------------------------------------</h3>
+     <%-include('./inc/navbar')%>
+     <h3>ADD WITH POST</h3>
+    <form action="http://localhost:8000/postAdd" method="POST">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="" required ><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="" required><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <h3>-----------------------------</h3>
+      <h3>ADD WİTH GET</h3>
+      <form action="http://localhost:8000/getAdd" method="GET">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="" required ><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="" required><br><br>
+        <input type="submit" value="Submit">
+      </form>
+</body>
+</html>

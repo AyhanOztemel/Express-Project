@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('./inc/head')%>
+    <link rel="stylesheet" href="css/style.css">
+<body>
+    <%-include('./inc/navbar')%>
+    <h3> SEARCH RESULT</h3>
+    <table class="tablo" style="width: 50%;">
+        <thead style="background-color: aqua;">
+           <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Surname</td>
+           <tr>
+        </thead>
+        <tbody>
+            <tr style="background-color: cadetblue;">
+                <td><%=id%></td>
+                <td><%=fname.toUpperCase() %></td>
+                <td><%=lname.toUpperCase() %></td>
+            </tr>
+          
+        </tbody>
+    </table>
+</body>
+</html>

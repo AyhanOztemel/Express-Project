@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%-include('./inc/head')%>
+   <link rel="stylesheet" href="css/style.css">
+<body>
+    <H3>USERS PAGE</H3>
+    <%-include('./inc/navbar')%>
+  
+  <!--     <hr style="width: 300px;text-align: left;">             --> 
+   <h6> REARCH RESULT</h6>
+   <h1>ALL USERS</h1>
+    <table class="tablo" style="width: 50%;">
+        <thead style="background-color: aqua;">
+           <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Surname</td>
+           <tr>
+        </thead>
+        <tbody>
+         <% for(i in users)  { %>
+            <tr style="background-color: cadetblue;">
+                <td><%=users[i].id%></td>
+                <td><%=users[i].fname.toUpperCase() %></td>
+                <td><%=users[i].lname.toUpperCase() %></td>
+            </tr>
+            <% } %>
+          
+        </tbody>
+    </table>
+
+</body>
+</html>
